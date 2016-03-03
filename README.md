@@ -1,32 +1,32 @@
 # Four Nineteen
 
-Minimalist theme for Tumblr.
+Minimalist theme for Tumblr. In use at <https://4-19.tumblr.com>.
 
 ## Instructions
 
-1. Install gem dependencies
+1. Install gem dependencies.
 
    ```shell
    bundle install
    ```
 
-1. Install node dependencies
+1. Install node dependencies.
 
    ```shell
    npm install
    ```
 
-1. Start development server with Middleman
+1. Start development server with Middleman.
 
    ```shell
    bundle exec middleman
    ```
 
-   or build to `/build`
+   Or build to `/build`.
 
    ```shell
    bundle exec middleman build
    ```
 
-`index.html` and `assets/stylesheets/all.css` in the `build` directory are to be
-uploaded to Tumblr.
+1. Upload `/index.html` and `/assets/stylesheets/all.css` to Tumblr. Note the
+   stylesheet link tag's URL will need to be updated to the new uploaded URL.
