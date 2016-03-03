@@ -1,0 +1,8 @@
+// Establish a vertical rhythm
+@include establish-baseline;
+
+body {
+  background-color: palette(secondary);
+  color: palette(primary);
+  font-family: font-family(primary);
+}

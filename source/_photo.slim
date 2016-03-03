@@ -1,0 +1,8 @@
+= block 'Photo' do
+  .post.post--photo
+    .post__body
+      = "{LinkOpenTag}" if build?
+      img[src=(build? ? "{PhotoURL-500}" : "http://40.media.tumblr.com/042ba725ec6206354847b266b540fe93/tumblr_o3avr1i2q71qacb6co1_1280.jpg") alt=(build? ? "{PhotoAlt}" : "Leica")]
+      = "{LinkCloseTag}" if build?
+    .post__details
+      = partial "details"

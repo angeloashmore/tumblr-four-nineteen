@@ -1,0 +1,18 @@
+= block 'Quote' do
+  .post.post--quote
+    .post__body
+      blockquote
+        - if build?
+          | {Quote}
+        - else
+          markdown:
+            I believe designers should eliminate the unnecessary. That means
+            eliminating everything that is modish because this kind of thing is
+            only short-lived.
+      = block 'Source' do
+        p
+          | &mdash;
+          strong<
+            = build? ? "{Source}" : "Dieter Rams"
+    .post__details
+      = partial "details"

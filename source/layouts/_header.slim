@@ -1,0 +1,5 @@
+.header
+  h1.header__title
+    a.header__title__link[href="/"]
+      = build? ? "{Title}" : config.tumblr_title
+  p.header__description= build? ? "{Description}" : config.tumblr_description

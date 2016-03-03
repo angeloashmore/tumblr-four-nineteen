@@ -1,0 +1,27 @@
+= block 'Link' do
+  .post.post--link
+    .post__title
+      h2
+        a.post__link[href="{URL}"]
+          = build? ? "{Name}" : "To Invent the Future, You Must Understand the Past"
+    .post__body
+      - if build?
+        | {Description}
+      - else
+        markdown:
+          “You can’t really understand what is going on now without
+          understanding what came before.”
+
+          Steve Jobs is explaining why, as a young man, he spent so much time
+          with the Silicon Valley entrepreneurs a generation older, men like
+          Robert Noyce, Andy Grove, and Regis McKenna.
+
+          It’s a beautiful Saturday morning in May, 2003, and I’m sitting next
+          to Jobs on his living room sofa, interviewing him for a book I’m
+          writing. I ask him to tell me more about why he wanted, as he put it,
+          “to smell that second wonderful era of the valley, the semiconductor
+          companies leading into the computer.” Why, I want to know, is it not
+          enough to stand on the shoulders of giants? Why does he want to pick
+          their brains?
+    .post__details
+      = partial "details"

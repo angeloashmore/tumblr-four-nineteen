@@ -1,0 +1,19 @@
+h1,
+h2,
+h3,
+h4,
+h5 {
+  @include type-weight(bold);
+  @include margin-leader(0);
+  @include margin-trailer(1);
+  @include type-scale(base);
+  color: palette(primary);
+}
+
+h1 {
+  @include type-scale(large);
+}
+
+h2 {
+  @include type-scale(medium);
+}

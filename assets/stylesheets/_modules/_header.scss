@@ -1,0 +1,13 @@
+.header {
+  &__title {
+    @include margin-trailer(0);
+
+    &__link {
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

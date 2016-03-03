@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    meta[charset="utf-8"]
+    meta[content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"]
+    meta[name="viewport" content="initial-scale=1.0"]
+    title= build? ? "{Title}" : config.tumblr_title
+    link[href=(build? ? config.tumblr_style_url : asset_path(:css, :all)) rel="stylesheet"]
+  body
+    .page
+      .page__header
+        = partial 'layouts/header'
+      .page__posts
+        = yield
+      = block 'Pagination' do
+        .page__pagination
+          = partial 'layouts/pagination'

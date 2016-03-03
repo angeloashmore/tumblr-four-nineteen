@@ -1,0 +1,42 @@
+$flask-color-base-black: #000 !default;
+$flask-color-base-white: #fff !default;
+
+$palettes: (
+  black: (
+    base: $flask-color-base-black,
+    dark: darken($flask-color-base-black, 15),
+    light: lighten($flask-color-base-black, 70),
+    extra-light: lighten($flask-color-base-black, 95)
+  ),
+  white: (
+    base: $flask-color-base-white,
+    dark: darken($flask-color-base-white, 15)
+  )
+);
+
+$palette-aliases: (
+  primary: black,
+  secondary: white,
+  accent: red
+);
+
+$fonts: (
+  system: (
+    font-type: sans-serif,
+    regular: -apple-system
+  )
+);
+
+$font-fallbacks: (
+  sans-serif: (
+    'San Francisco',
+    'Helvetica Neue',
+    Helvetica,
+    Arial,
+    sans-serif
+  )
+);
+
+$font-aliases: (
+  primary: system
+);

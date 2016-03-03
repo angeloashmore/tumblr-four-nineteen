@@ -1,0 +1,13 @@
+.pagination
+  .pagination__item.pagination__item--first
+    = block 'PreviousPage' do
+      a.pagination__link.pagination__link--first[href="{PreviousPage}"]
+        | &lsaquo;
+  .pagination__item
+    strong>= build? ? "{CurrentPage}" : "1"
+    | of
+    strong<= build? ? "{TotalPages}" : "3"
+  .pagination__item.pagination__item--last
+    = block 'NextPage' do
+      a.pagination__link.pagination__link--last[href="{NextPage}"]
+        | &rsaquo;

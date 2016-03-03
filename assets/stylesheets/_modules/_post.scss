@@ -1,0 +1,34 @@
+.post {
+  @include leading-border(4px, 2);
+  @include margin-trailer(2);
+  width: 100%;
+  @include from(iphone6plus) {
+    flex-basis: 48%;
+  }
+  @include from(ipadmini) {
+    flex-basis: 23%;
+  }
+  @include from(portable) {
+    flex-basis: 15%;
+  }
+  @include from(desktop) {
+    flex-basis: 13%;
+  }
+
+  &__link {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__body {
+    @include margin-trailer(1);
+  }
+
+  // Needed for embeds (audio, video)
+  iframe {
+    width: 100%;
+  }
+}

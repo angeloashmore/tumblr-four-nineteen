@@ -1,0 +1,24 @@
+.button {
+  @include rhythm-borders(4px);
+  @include type-scale(xlarge);
+  @include type-weight(bold);
+  align-items: stretch;
+  border-radius: 100em;
+  display: flex;
+  height: rhythm(1);
+  justify-content: center;
+  overflow: none;
+  width: rhythm(1);
+
+  &__link {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    width: 100%;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

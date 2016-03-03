@@ -1,0 +1,18 @@
+.details {
+  color: palette(primary, light);
+  display: flex;
+  justify-content: space-between;
+  margin-left: 0;
+
+  &__timestamp {
+    margin-right: rhythm(1);
+  }
+
+  &__permalink {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

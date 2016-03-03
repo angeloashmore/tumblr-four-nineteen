@@ -1,0 +1,9 @@
+.details
+  .details__timestamp
+    a.details__permalink[href="{Permalink}"]
+      | Posted
+      =< build? ? "{TimeAgo}" : "2 hours ago"
+  = block 'NoteCount' do
+    .details__notes
+      a.details__permalink[href="{Permalink}"]
+        = build? ? "{NoteCountWithLabel}" : "4 notes"
